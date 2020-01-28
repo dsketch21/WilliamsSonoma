@@ -1,0 +1,51 @@
+@import '../../assets/sass/styles.scss';
+
+.product-list-view {
+    border-left: 1px solid $color-grey;
+    box-sizing: border-box;
+
+    .instructions {
+        box-sizing: border-box;
+        padding: $content-wrapper-gutter-half;
+
+        p {
+            color: $color-dark;
+            font-size: 16px;
+        }
+    }
+
+    .products,
+    .selected-products {
+        border-top: 1px solid $color-grey;
+        box-sizing: border-box;
+    }
+
+    .selected-products {
+        border-left: 3px solid $color-yellow;
+    }
+
+    .products {
+        &.products-selected {
+            border-right: 3px solid $color-yellow;
+        }
+    }
+    .product {
+        border-right: 1px solid $color-grey;
+        border-bottom: 1px solid $color-grey;
+        box-sizing: border-box;
+        cursor: pointer;
+        padding: 0 $content-wrapper-gutter;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        p {
+            text-align: center;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

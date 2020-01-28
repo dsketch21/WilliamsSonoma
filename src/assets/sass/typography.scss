@@ -1,0 +1,19 @@
+@import 'variables.scss';
+
+p,
+li {
+    color: $color-grey;
+    font-family: $content-font-family;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $header-font-family;
+    font-weight: normal;
+}

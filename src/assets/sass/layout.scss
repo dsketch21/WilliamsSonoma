@@ -1,0 +1,15 @@
+@import 'variables.scss';
+@include foundation-button();
+@include foundation-xy-grid-classes();
+
+body {
+    background-color: $background-color;
+    margin: 0;
+    padding: 0 0 50px 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+    body {
+        padding-bottom: 80px;
+    }
+}

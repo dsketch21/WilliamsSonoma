@@ -1,0 +1,42 @@
+@import '../../assets/sass/styles.scss';
+
+footer {
+    bottom: 0;
+    max-height: 80px;
+    position: fixed;
+    width: 100%;
+
+    div {
+        align-items: center;
+        background-color: $color-dark;
+        color: $color-white;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+
+        p {
+            a {
+                text-decoration: none;
+
+                &.button {
+                    background-color: $color-grey;
+                    color: $color-dark;
+                    font-weight: bold;
+                    margin-bottom: 0;
+
+                    &:hover {
+                        color: $color-dark;
+                    }
+
+                    &.active {
+                        background-color: $color-yellow;
+                    }
+
+                    &:last-of-type {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
